@@ -1,0 +1,205 @@
+body
+{
+    font-family: arial;
+    background-color:#CFCFCF;
+    background: linear-gradient(to top, #CFCFCF 0%, #4D4D4D 100%);    
+}
+h1
+{
+    text-align: center;
+    border: 3px solid #2600E6;
+    height: 75px;
+    width: 550px;
+    margin:auto;
+    margin-top: 300px;
+    
+}
+h1
+{
+    font-family: arial black black;
+    color: #14396A !important;
+    font-size: 23px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+}
+h1
+{
+    color: #14396A !important;
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+}
+li
+{
+    text-align: center;
+    border: 2px solid #63B8EE;
+    height: 20px;
+    width: 50px;
+    margin:auto;
+}
+li
+{
+    font-family: arial black black;
+    color: #14396A !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+}
+li
+{
+    color: #14396A !important;
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+li:hover {
+    animation: zoomIn 500ms;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+/* https://cssgenerator.org/box-shadow-css-generator.html */
+/* https://developer.mozilla.org/fr/docs/Web/CSS/@keyframes */
+@keyframes zoomIn {
+    50% {
+        transform: scale(1.5);
+    }
+
+    75% {
+        background-color: rgb(223, 24, 24);
+    }
+}
+
+@keyframes saucisse {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#start_boutton {
+    width: 120px;
+    height: 60px;
+    border-radius: 20px;
+    background: #333;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.8;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#start_boutton:hover {
+    animation: saucisse 1s ease-in-out forwards;
+}
+
+
+
+#score_container {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#score {
+    font-size: 32px;
+    color: white;
+}
+
+/* Ruban CSS Header */
+.ribbon {
+    margin-top: -275px;
+    width: 1750px;
+    position:absolute;
+    left: 15%;
+    margin-left: -200px;
+    text-align: center;
+    font-size: 23px !important;
+    background: #D6D6D6;
+    background: linear-gradient(to bottom, #D6D6D6, #ABABAB);
+    box-shadow: rgba(0,0,0,0.3) 0 1px 1px;
+    font-family: 'Helvetica Neue',Helvetica, sans-serif;
+}
+
+.ribbon p {
+    font-size: 33px !important;
+    color: #706C70;
+    text-shadow: #D6C5C5 0 1px 0;
+    margin:0px;
+    padding: 6px 10px;
+}
+
+.ribbon:before, .ribbon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #706C70;
+    z-index: -1;
+}
+
+.ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+    box-shadow: rgba(0,0,0,0.4) 1px 1px 1px;
+}
+
+.ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+    box-shadow: rgba(0,0,0,0.4) -1px 1px 1px;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    border-color: #878787 transparent transparent transparent;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    bottom: -1em;
+    content: '';
+}
+
+.ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
+.ribbon-stitches-top {
+    margin-top:2px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+}
+
+.ribbon-stitches-bottom {
+    margin-bottom:2px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+}
